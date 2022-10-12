@@ -1,0 +1,22 @@
+Source: lua-luassert
+Section: interpreters
+Priority: optional
+Maintainer: Jason Pleau <jason@jpleau.ca>
+Build-Depends: debhelper (>= 11), dh-lua
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://github.com/Olivine-Labs/luassert
+Vcs-Git: https://salsa.debian.org/lua-team/lua-luassert.git
+Vcs-Browser: https://salsa.debian.org/lua-team/lua-luassert
+
+Package: lua-luassert
+Architecture: all
+Depends: ${misc:Depends}, lua-say
+Provides: ${lua:Provides}
+XB-Lua-Versions: ${lua:Versions}
+Description: Lua assertions extension
+ luassert extends Lua's built-in assertions to provide additional tests and
+ the ability to create your own.
+ .
+ It comes preloaded with argument formatters for common Lua types, but it is
+ easy to roll your own.

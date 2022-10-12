@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/lua-luassert-$1\.tar\.gz/ \
+  https://github.com/Olivine-Labs/luassert/tags .*/v?(\d\S*)\.tar\.gz
